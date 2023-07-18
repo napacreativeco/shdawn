@@ -99,10 +99,10 @@
 
   </div>
 
-  {% render 'privacy-footer' %}
+  {% render 'throne--privacy-footer' %}
 
   {% if settings.marquee_visible == true %}
-    {% render 'throne-marquee' %}
+    {% render 'throne--marquee' %}
   {% endif %}
 
 </section>
@@ -169,6 +169,7 @@
 </script>
 
 <script src="{{ 'gsap-draggable.min.js' | asset_url }}"></script>
+
 <script>
   function hidePlus() {
     document.querySelector('.plus').style.display = 'none';
